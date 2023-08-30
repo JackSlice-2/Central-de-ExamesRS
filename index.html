@@ -1,5 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"
+class=""
+>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,18 +15,19 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" 
         href="main.css">
-    </head>
-<body class="overflow-x-hidden">
+</head>
+<body class="overflow-x-hidden"
+style="background: url(image/background.jpg);">
     <header class="header">
         <a href="#" class="logo"> <i class="fas fa-stethoscope"></i> 
             Rede Exames Facil</a>
-        <nav class="navbar">
+        <nav class="navbar absolute bg-black">
             <a href="#home" class="active">home</a>
             <a href="#products">products</a>
             <a href="#about">about</a>
-            <a href="#arrivals">arrivals</a>
+            <a href="#exames">exames</a>
             <a href="#contact">contact</a>
-            <a href="#blogs">blogs</a>
+            <a href="#parcerias">parcerias</a>
         </nav>
         <div class="icons">
             <div id="menu-btn" class="fas fa-bars"></div>
@@ -33,7 +36,8 @@
             <a href="#" class="fas fa-user"></a>
         </div>
     </header>
-    <section class="home" id="home">
+
+    <section class="home p-0" id="home">
         <div class="swiper home-slider">
             <div class="swiper-wrapper">
                 <div class="swiper-slide box" >
@@ -67,7 +71,6 @@
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
         </div>
-
     </section>
 
     <section class="products" id="products">
@@ -149,18 +152,9 @@
         </div>
     </section>
 
-    <section class="about" id="about">
-        <div class="content" data-aos="zoom-in-right">
-            <h3>about us</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime 
-                itaque molestiae assumenda atque libero? Quisquam, neque dolore. 
-                Obcaecati impedit in deleniti, cumque sunt sit illum quis 
-                aspernatur eligendi nihil cupiditate.</p>
-                <a href="" class="btn">read more</a>
-        </div>
-    </section>
-
-    <section class="arrivals" id="arrivals">
+    <section class="exames w-screen" 
+    style="background: url(../image/exames.jpg);"
+    id="exames">
         <h1 class="heading"> Escolha um <span>Exame</span></h1>
         <div class="box-container">
 
@@ -224,6 +218,22 @@
         </div>
     </section>
 
+    <section 
+    class="about bg-cover bg-center bg-no-repeat" 
+    style="background-image: url('./image/about-bt.jpg');" 
+    id="about">
+        <div class="content py-52 max-w-80" data-aos="zoom-in-right">
+            <h3>about us</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime 
+                itaque molestiae assumenda atque libero? Quisquam, neque dolore. 
+                Obcaecati impedit in deleniti, cumque sunt sit illum quis 
+                aspernatur eligendi nihil cupiditate.</p>
+                <a href="" class="btn">read more</a>
+        </div>
+    </section>
+
+
     <section class="contact" id="contact">
         <h1 class="heading"> <span>contact</span>us</h1>
         <div class="row">
@@ -242,7 +252,7 @@
         </div>
     </section>
 
-    <section class="blogs" id="blogs">
+    <section class="parcerias" id="parcerias">
         <h1 class="heading">Conheca Nossos <span>Parceiros</span></h1>
         <div class="box-container">
             <div class="box" data-aos="flip-right">
@@ -308,9 +318,9 @@
                 <a href=""><i class="fas fa-arrow-right"></i>home</a>
                 <a href=""><i class="fas fa-arrow-right"></i>products</a>
                 <a href=""><i class="fas fa-arrow-right"></i>about</a>
-                <a href=""><i class="fas fa-arrow-right"></i>arrivals</a>
+                <a href=""><i class="fas fa-arrow-right"></i>exames</a>
                 <a href=""><i class="fas fa-arrow-right"></i>contact</a>
-                <a href=""><i class="fas fa-arrow-right"></i>blogs</a>
+                <a href=""><i class="fas fa-arrow-right"></i>parcerias</a>
             </div>
             <div class="box">
                 <h3>contact us</h3>
