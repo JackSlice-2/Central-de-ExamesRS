@@ -1,7 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"
-class=""
->
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,33 +15,45 @@ class=""
         href="main.css">
 </head>
 <body class="overflow-x-hidden"
-style="background: url(image/background.jpg);">
+    style= "background: 
+        linear-gradient(to bottom, #93cc7d, #329b33),
+        repeating-linear-gradient(45deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) 10px, transparent 10px, transparent 20px);
+        background-size: cover;
+        background-attachment: fixed;"
+        >
     <header class="header">
         <a href="#" class="logo"> <i class="fas fa-stethoscope"></i> 
             Rede Exames Facil</a>
         <nav class="navbar absolute bg-black">
             <a href="#home" class="active">home</a>
             <a href="#products">products</a>
-            <a href="#about">about</a>
             <a href="#exames">exames</a>
+            <a href="#about">about</a>
             <a href="#contact">contact</a>
             <a href="#parcerias">parcerias</a>
         </nav>
         <div class="icons">
             <div id="menu-btn" class="fas fa-bars"></div>
             <div id="search-btn" class=""></div>
-            <a href="#" class="fa-solid fa-cart-shopping"></a>
-            <a href="#" class="fas fa-user"></a>
         </div>
     </header>
 
     <section class="home p-0" id="home">
         <div class="swiper home-slider">
             <div class="swiper-wrapper">
-                <div class="swiper-slide box" >
-                    <div class="content">
+                <div class="swiper-slide box">
+                    <div class="content">         
                         <h3>Agenda Seu Exame!</h3>
                         <p>special discount</p>
+                        <div class="button" >
+                            <a href="" class="btn">shop now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="content">
+                        <h3>Como Agendar um Exame?</h3>
+                        <p>Contamos com mais de 100 parceiros na área de saúde, para oferecer atendimento.</p>
                         <div class="button">
                             <a href="" class="btn">shop now</a>
                         </div>
@@ -51,51 +61,180 @@ style="background: url(image/background.jpg);">
                 </div>
                 <div class="swiper-slide box">
                     <div class="content">
-                        <h3>up to 40% off</h3>
-                        <p>on all costumes</p>
+                        <h3>quem nos somos</h3>
+                        <p class="text-center">Sua Família pode confiar, somos parte de uma empresa com 16 anos no mercado de saúde, oferecendo serviços de qualidade,  valor acessível e agora com a facilidade de agendamento de exames e consultas online.</p>
                         <div class="button">
-                            <a href="" class="btn">shop now</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide box">
-                    <div class="content">
-                        <h3>limeted offer</h3>
-                        <p>can't miss</p>
-                        <div class="button">
-                            <a href="" class="btn">shop now</a>
+                            <a href="" class="btn">whatsap</a>
+                            <a href="" class="btn">telegram</a>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </section>
+    
+    <section class="parcerias" id="parcerias">
+        <h1 class="heading">Confira nossos <span>Exames</span></h1>
+        <div class="box-container">
+            <div class="box" data-aos="flip-right">
+                <div class="image">
+                    <img src="image/arrival-1.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Raio-X</h3>
+                    <p>Porto Alegre, Viamao, Alvorada, Canoas</p>
+                    <div class="icons">
+                      <a href="" class="fab fa-whatsapp"> Marque Agora!</a>
+                        <a href="" class="fab fa-telegram"> Marque Agora!</a>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="box" data-aos="flip-up">
+                <div class="image">
+                    <img src="image/arrival-2.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Raio-X</h3>
+                    <p>Porto Alegre, Viamao, Alvorada, Canoas</p>
+                    <div class="icons">
+                      <a href="" class="fab fa-whatsapp"> Marque Agora!</a>
+                        <a href="" class="fab fa-telegram"> Marque Agora!</a>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="box" data-aos="flip-left">
+                <div class="image">
+                    <img src="image/arrival-3.gif" alt="">
+                </div>
+                <div class="content">
+                    <h3>Raio-X</h3>
+                    <p>Porto Alegre, Viamao, Alvorada, Canoas</p>
+                    <div class="icons">
+                      <a href="" class="fab fa-whatsapp"> Marque Agora!</a>
+                        <a href="" class="fab fa-telegram"> Marque Agora!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="parcerias" id="parcerias">
+        <div class="box-container">
+            <div class="box" data-aos="flip-right">
+                <div class="image">
+                    <img src="image/arrival-1.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Raio-X</h3>
+                    <p>Porto Alegre, Viamao, Alvorada, Canoas</p>
+                    <div class="icons">
+                      <a href="" class="fab fa-whatsapp"> Marque Agora!</a>
+                        <a href="" class="fab fa-telegram"> Marque Agora!</a>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="box" data-aos="flip-up">
+                <div class="image">
+                    <img src="image/arrival-2.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Raio-X</h3>
+                    <p>Porto Alegre, Viamao, Alvorada, Canoas</p>
+                    <div class="icons">
+                      <a href="" class="fab fa-whatsapp"> Marque Agora!</a>
+                        <a href="" class="fab fa-telegram"> Marque Agora!</a>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="box" data-aos="flip-left">
+                <div class="image">
+                    <img src="image/arrival-3.gif" alt="">
+                </div>
+                <div class="content">
+                    <h3>Raio-X</h3>
+                    <p>Porto Alegre, Viamao, Alvorada, Canoas</p>
+                    <div class="icons">
+                        <a href="" class="fab fa-whatsapp"> Marque Agora!</a>
+                        <a href="" class="fab fa-telegram"> Marque Agora!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> 
+    <section class="parcerias" id="parcerias">
+        <div class="box-container">
+            <div class="box" data-aos="flip-right">
+                <div class="image">
+                    <img src="image/arrival-1.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Raio-X</h3>
+                    <p>Porto Alegre, Viamao, Alvorada, Canoas</p>
+                    <div class="icons">
+                        <a href="" class="fab fa-whatsapp"> Marque Agora!</a>
+                        <a href="" class="fab fa-telegram"> Marque Agora!</a>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="box" data-aos="flip-up">
+                <div class="image">
+                    <img src="image/arrival-2.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Raio-X</h3>
+                    <p>Porto Alegre, Viamao, Alvorada, Canoas</p>
+                    <div class="icons">
+                      <a href="" class="fab fa-whatsapp"> Marque Agora!</a>
+                        <a href="" class="fab fa-telegram"> Marque Agora!</a>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="box" data-aos="flip-left">
+                <div class="image">
+                    <img src="image/arrival-3.gif" alt="">
+                </div>
+                <div class="content">
+                    <h3>Raio-X</h3>
+                    <p>Porto Alegre, Viamao, Alvorada, Canoas</p>
+                    <div class="icons">
+                      <a href="" class="fab fa-whatsapp"> Marque Agora!</a>
+                        <a href="" class="fab fa-telegram"> Marque Agora!</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
     <section class="products" id="products">
-        <h1 class="heading"> Escolha uma <span>especialidade</span></h1>
+        <h1 class="heading">Confira nossas <span>Consultas Presenciais</span></h1>
         <div class="swiper products-slider" data-aos="zoom-in">
             <div class="swiper-wrapper">
 
                 <div class="swiper-slide box">
                     <div class="icons">
-                        <a href="" class="fas fa-shopping-cart"></a>
-                        <a href="" class="fas fa-eye"></a>
+                        <a href="" class="fab fa-telegram"></a>
+                        <a href="" class="fab fa-whatsapp"></a>
                         <a href="" class="fas fa-share"></a>
                     </div>
                     <div class="image">
                         <img src="image/product-1.jpg" alt="">
                     </div>
                     <div class="content">
-                        <h3>latest products</h3>
-                        <div class="price">$79.99 <span>$95.99</span></div>
+                        <h3>Oftalmologista</h3>
+                        <div class="location">Confira se tem na sua regiao</div>
                     </div>
                 </div>
                 <div class="swiper-slide box">
                     <div class="icons">
-                        <a href="" class="fas fa-shopping-cart"></a>
-                        <a href="" class="fas fa-eye"></a>
+                        <a href="" class="fab fa-telegram"></a>
+                        <a href="" class="fab fa-whatsapp"></a>
                         <a href="" class="fas fa-share"></a>
                     </div>
                     <div class="image">
@@ -103,13 +242,13 @@ style="background: url(image/background.jpg);">
                     </div>
                     <div class="content">
                         <h3>clinico geral</h3>
-                        <div class="price">$79.99 <span>$95.99</span></div>
+                        <div class="location">Confira se tem na sua regiao</div>
                     </div>
                 </div>
                 <div class="swiper-slide box">
                     <div class="icons">
-                        <a href="" class="fas fa-shopping-cart"></a>
-                        <a href="" class="fas fa-eye"></a>
+                        <a href="" class="fab fa-telegram"></a>
+                        <a href="" class="fab fa-whatsapp"></a>
                         <a href="" class="fas fa-share"></a>
                     </div>
                     <div class="image">
@@ -117,13 +256,13 @@ style="background: url(image/background.jpg);">
                     </div>
                     <div class="content">
                         <h3>oftalmologista</h3>
-                        <div class="price">$79.99 <span>$95.99</span></div>
+                        <div class="location">Confira se tem na sua regiao</div>
                     </div>
                 </div>
                 <div class="swiper-slide box">
                     <div class="icons">
-                        <a href="" class="fas fa-shopping-cart"></a>
-                        <a href="" class="fas fa-eye"></a>
+                        <a href="" class="fab fa-telegram"></a>
+                        <a href="" class="fab fa-whatsapp"></a>
                         <a href="" class="fas fa-share"></a>
                     </div>
                     <div class="image">
@@ -131,13 +270,13 @@ style="background: url(image/background.jpg);">
                     </div>
                     <div class="content">
                         <h3>neurologista</h3>
-                        <div class="price">$79.99 <span>$95.99</span></div>
+                        <div class="location">Confira se tem na sua regiao</div>
                     </div>
                 </div>
                 <div class="swiper-slide box">
                     <div class="icons">
-                        <a href="" class="fas fa-shopping-cart"></a>
-                        <a href="" class="fas fa-eye"></a>
+                        <a href="" class="fab fa-telegram"></a>
+                        <a href="" class="fab fa-whatsapp"></a>
                         <a href="" class="fas fa-share"></a>
                     </div>
                     <div class="image">
@@ -145,7 +284,7 @@ style="background: url(image/background.jpg);">
                     </div>
                     <div class="content">
                         <h3>latest products</h3>
-                        <div class="price">$79.99 <span>$95.99</span></div>
+                        <div class="location">Confira se tem na sua regiao</div>
                     </div>
                 </div>
             </div>
@@ -155,7 +294,7 @@ style="background: url(image/background.jpg);">
     <section class="exames w-screen" 
     style="background: url(../image/exames.jpg);"
     id="exames">
-        <h1 class="heading"> Escolha um <span>Exame</span></h1>
+        <h1 class="heading"> Tambem Temos <span>consultas online</span></h1>
         <div class="box-container">
 
             <div class="box" data-aos="fade-right">
@@ -169,7 +308,7 @@ style="background: url(image/background.jpg);">
                 </div>
                 <div class="content">
                     <h3>Exames de sangue</h3>
-                        <div class="price">79.99 <span>95.99</span></div>
+                        <div class="location">Porto Alegre <span>95.99</span></div>
                 </div>
             </div>
             <div class="box" data-aos="fade-down">
@@ -183,7 +322,7 @@ style="background: url(image/background.jpg);">
                 </div>
                 <div class="content">
                     <h3>Ecografias</h3>
-                        <div class="price">79.99 <span>95.99</span></div>
+                        <div class="location">Viamao <span>95.99</span></div>
                 </div>
             </div>
             <div class="box" data-aos="fade-left">
@@ -197,7 +336,7 @@ style="background: url(image/background.jpg);">
                 </div>
                 <div class="content">
                     <h3>Raio-x</h3>
-                        <div class="price">79.99 <span>95.99</span></div>
+                        <div class="location">Canoas <span>95.99</span></div>
                 </div>
             </div>
             <div class="box">
@@ -211,28 +350,12 @@ style="background: url(image/background.jpg);">
                 </div>
                 <div class="content">
                     <h3>latest products</h3>
-                        <div class="price">79.99 <span>95.99</span></div>
+                        <div class="location">Alvorada <span>95.99</span></div>
                 </div>
             </div>
             </div>
         </div>
     </section>
-
-    <section 
-    class="about bg-cover bg-center bg-no-repeat" 
-    style="background-image: url('./image/about-bt.jpg');" 
-    id="about">
-        <div class="content py-52 max-w-80" data-aos="zoom-in-right">
-            <h3>about us</h3>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime 
-                itaque molestiae assumenda atque libero? Quisquam, neque dolore. 
-                Obcaecati impedit in deleniti, cumque sunt sit illum quis 
-                aspernatur eligendi nihil cupiditate.</p>
-                <a href="" class="btn">read more</a>
-        </div>
-    </section>
-
 
     <section class="contact" id="contact">
         <h1 class="heading"> <span>contact</span>us</h1>
@@ -252,66 +375,17 @@ style="background: url(image/background.jpg);">
         </div>
     </section>
 
-    <section class="parcerias" id="parcerias">
-        <h1 class="heading">Conheca Nossos <span>Parceiros</span></h1>
-        <div class="box-container">
-            <div class="box" data-aos="flip-right">
-                <div class="image">
-                    <img src="image/blog-1.jpg" alt="">
-                </div>
-                <div class="content">
-                    <h3>Venha conhecer nossa clinica medica</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                    <a href="" class="btn">read more</a>
-                    <div class="icons">
-                        <a href=""> <i class="fas fa-calander"></i> 1st May, 2024</a>
-                        <a href="" class="fas fa-user"> by admin</a>
-                    </div>
-                </div>
-                
-            </div>
-            <div class="box" data-aos="flip-up">
-                <div class="image">
-                    <img src="image/blog-2.jpg" alt="">
-                </div>
-                <div class="content">
-                    <h3>Venha conhecer nossa clinica medica</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                    <a href="" class="btn">read more</a>
-                    <div class="icons">
-                        <a href=""> <i class="fas fa-calander"></i> 1st May, 2024</a>
-                        <a href="" class="fas fa-user"> by admin</a>
-                    </div>
-                </div>
-
-            </div>
-            <div class="box" data-aos="flip-left">
-                <div class="image">
-                    <img src="image/blog-3.jpg" alt="">
-                </div>
-                <div class="content">
-                    <h3>Venha conhecer nossa clinica medica</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                    <a href="" class="btn">read more</a>
-                    <div class="icons">
-                        <a href=""> <i class="fas fa-calander"></i> 1st May, 2024</a>
-                        <a href="" class="fas fa-user"> by admin</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <section class="footer" id="footer">
         <div class="box-container">
 
             <div class="box">
                 <h3>our branches</h3>
-                <a href=""><i class="fas fa-map-marker-alt"></i>India</a>
-                <a href=""><i class="fas fa-map-marker-alt"></i>USA</a>
-                <a href=""><i class="fas fa-map-marker-alt"></i>Russia</a>
-                <a href=""><i class="fas fa-map-marker-alt"></i>Japan</a>
-                <a href=""><i class="fas fa-map-marker-alt"></i>France</a>
+                <a href=""><i class="fas fa-map-marker-alt"></i>Sidi</a>
+                <a href=""><i class="fas fa-map-marker-alt"></i>Eco Clinica</a>
+                <a href=""><i class="fas fa-map-marker-alt"></i>Imi Center</a>
+                <a href=""><i class="fas fa-map-marker-alt"></i>Laboratro Masi</a>
+                <a href=""><i class="fas fa-map-marker-alt"></i>Laboratiorio de Audiologia</a>
+                <a href=""><i class="fas fa-map-marker-alt"></i>SerVida</a>
             </div>
             <div class="box">
                 <h3>quick links</h3>
@@ -331,20 +405,20 @@ style="background: url(image/background.jpg);">
             </div>
             <div class="box">
                 <h3>contact us</h3>
-                <a href=""><i class="fab fa-facebook-f"></i> facebook</a>
+                <a href=""><i class="fab fa-whatsapp"></i> whatsapp</a>
                 <a href=""><i class="fab fa-instagram"></i> instagram</a>
-                <a href=""><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href=""><i class="fab fa-telegram"></i> telegram</a>
             </div>
         </div>
-        <div class="credit"> created by <span>P.C Nunes</span> |all rights reserved </div>
+        <div class="credit"> created by <a href="https://afrotech.netlify.app/">AfroTech</a> |all rights reserved </div>
     </section>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init({
-            delay:400,
-            duration: 800
+            delay:100,
+            duration: 500
         });
     </script>
 </body>

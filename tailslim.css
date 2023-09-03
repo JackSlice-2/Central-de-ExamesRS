@@ -534,6 +534,10 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.fixed {
+  position: fixed;
+}
+
 .absolute {
   position: absolute;
 }
@@ -551,25 +555,12 @@ video {
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
-.bg-cover {
-  background-size: cover;
-}
-
-.bg-center {
-  background-position: center;
-}
-
-.bg-no-repeat {
-  background-repeat: no-repeat;
-}
-
 .p-0 {
   padding: 0px;
 }
 
-.py-52 {
-  padding-top: 13rem;
-  padding-bottom: 13rem;
+.text-center {
+  text-align: center;
 }
 
 :root{
@@ -662,7 +653,7 @@ header{
 
 .header .logo i{
   padding-right: .5rem;
-  color:var(--main-color);
+  color: lightgreen;
   animation: floating 2s linear infinite;
 }
 
@@ -751,20 +742,18 @@ header{
   opacity: 1;
 }
 
-.home .home-slider .swiper-button-next{
+.home .swiper-button-next{
   right: 4rem;
   color: darkgreen;
-  opacity: 0;
 }
 
-.home .home-slider .swiper-button-prev{
+.home .swiper-button-prev{
   left: 4rem;
   color: darkgreen;
-  opacity: 0;
 }
 
-.home .home-slider:hover .swiper-button-next,
-.home .home-slider:hover .swiper-button-prev{
+.home .swiper-button-next:hover,
+.home .swiper-button-prev:hover {
   color: lightgreen;
   scale: 200%;
 }
@@ -836,13 +825,13 @@ header{
   color: #fff;
 }
 
-.products .products-slider .box .content .price{
+.products .products-slider .box .content .location{
   font-size: 2rem;
   font-weight: bolder;
   color: #fff;
 }
 
-.products .products-slider .box .content .price span{
+.products .products-slider .box .content .location span{
   font-size: 1.5rem;
   font-weight: normal;
   color: var(--main-color);
@@ -928,13 +917,13 @@ header{
   color: #fff;
 }
 
-.exames .box-container .box .content .price{
+.exames .box-container .box .content .location{
   font-size: 2rem;
   font-weight: bolder;
   color: #fff;
 }
 
-.exames .box-container .box .content .price span{
+.exames .box-container .box .content .location span{
   font-size: 1.5rem;
   font-weight: normal;
   color: var(--main-color);
@@ -1028,12 +1017,13 @@ header{
 }
 
 .parcerias .box-container .box .content .icons a{
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   color: var(--main-color)
 }
 
 .parcerias .box-container .box .content .icons a:hover{
   color: #fff;
+  font-size: 2.5rem;
 }
 
 .parcerias .box-container .box .content .icons a i{
@@ -1087,7 +1077,7 @@ header{
   text-align: center;
 }
 
-.footer .credit span{
+.footer .credit a{
   color:var(--main-color)
 }
 

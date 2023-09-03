@@ -78,7 +78,7 @@ header{
 }
 .header .logo i{
     padding-right: .5rem;
-    color:var(--main-color);
+    color: lightgreen;
     animation: floating 2s linear infinite;
 }
 @keyframes floating{
@@ -151,18 +151,16 @@ header{
     transform: translateY(0rem);
     opacity: 1;
 }
-.home .home-slider .swiper-button-next{
+.home .swiper-button-next{
     right: 4rem;
     color: darkgreen;
-    opacity: 0;
 }
-.home .home-slider .swiper-button-prev{
+.home .swiper-button-prev{
     left: 4rem;
     color: darkgreen;
-    opacity: 0;
 }
-.home .home-slider:hover .swiper-button-next,
-.home .home-slider:hover .swiper-button-prev{
+.home .swiper-button-next:hover,
+.home .swiper-button-prev:hover {
     color: lightgreen;
     scale: 200%;
 }
@@ -220,12 +218,12 @@ header{
     font-weight: normal;
     color: #fff;
 }
-.products .products-slider .box .content .price{
+.products .products-slider .box .content .location{
     font-size: 2rem;
     font-weight: bolder;
     color: #fff;
 }
-.products .products-slider .box .content .price span{
+.products .products-slider .box .content .location span{
     font-size: 1.5rem;
     font-weight: normal;
     color: var(--main-color);
@@ -297,12 +295,12 @@ header{
     font-weight: normal;
     color: #fff;
 }
-.exames .box-container .box .content .price{
+.exames .box-container .box .content .location{
     font-size: 2rem;
     font-weight: bolder;
     color: #fff;
 }
-.exames .box-container .box .content .price span{
+.exames .box-container .box .content .location span{
     font-size: 1.5rem;
     font-weight: normal;
     color: var(--main-color);
@@ -380,11 +378,13 @@ header{
     justify-content: space-between;
 }
 .parcerias .box-container .box .content .icons a{
-    font-size: 1.4rem;
+    font-size: 1.8rem;
     color: var(--main-color)
 }
 .parcerias .box-container .box .content .icons a:hover{
     color: #fff;
+    font-size: 2.5rem;
+
 }
 .parcerias .box-container .box .content .icons a i{
     padding-right: .5rem;
@@ -428,11 +428,9 @@ header{
     color: #aaa;
     text-align: center;
 }
-.footer .credit span{
+.footer .credit a{
     color:var(--main-color)
 }
-
-
 
 /* MEDIA QUERIES */
 
