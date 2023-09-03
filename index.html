@@ -1,5 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="font-size: 62.5%; overflow-x: hidden; scroll-behavior: smooth; scroll-padding-top: 7rem;">
+  <style>
+    /* Tailwind CSS classes */
+    html::-webkit-scrollbar {
+      width: 1rem;
+    }
+    html::-webkit-scrollbar-track {
+      background: var(--black); /* Assuming you have defined the "--black" color in your Tailwind CSS configuration */
+    }
+    html::-webkit-scrollbar-thumb {
+      background: var(--main-color); /* Assuming you have defined the "--main-color" color in your Tailwind CSS configuration */
+    }
+  </style>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -21,8 +33,15 @@
         background-size: cover;
         background-attachment: fixed;"
         >
-    <header class="header">
-        <a href="#" class="logo"> <i class="fas fa-stethoscope"></i> 
+    <header class="header" 
+            style="position: fixed; top: 0; left: 0; right: 0; z-index: 1000; background: rgba(0, 0, 0, .4); padding: 4rem 9%; display: flex; align-items: center; justify-content: space-between;">
+        <a href="#" class="logo" 
+        style="font-size: 3rem;
+        color:#fff;
+        font-weight: bolder;" > 
+            <i class="fas fa-stethoscope" style="padding-right: .5rem;
+            color: lightgreen;
+            animation: floating 2s linear infinite;"></i> 
             Rede Exames Facil</a>
         <nav class="navbar absolute bg-black">
             <a href="#home" class="active">home</a>
@@ -33,12 +52,12 @@
             <a href="#parcerias">parcerias</a>
         </nav>
         <div class="icons">
-            <div id="menu-btn" class="fas fa-bars"></div>
+            <div id="menu-btn" style="display: none;" class="fas fa-bars"></div>
             <div id="search-btn" class=""></div>
         </div>
     </header>
 
-    <section class="home p-0" id="home">
+    <section style="padding: 2rem 9%;" class="home p-0" id="home">
         <div class="swiper home-slider">
             <div class="swiper-wrapper">
                 <div class="swiper-slide box">
@@ -71,12 +90,17 @@
                 </div>
             </div>
         </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next" style="right: 4rem;
+        color: darkgreen;"></div>
+        <div class="swiper-button-prev" style="left: 4rem;
+        color: darkgreen;"></div>
     </section>
     
-    <section class="parcerias" id="parcerias">
-        <h1 class="heading">Confira nossos <span>Exames</span></h1>
+    <section style="padding: 2rem 9%;" class="parcerias" id="parcerias">
+        <h1 style="  font-size: 4rem;
+    text-align: center;
+    padding-bottom: 2rem;
+    color: #fff;">Confira nossos <span style="color: var(--main-color);">Exames</span></h1>
         <div class="box-container">
             <div class="box" data-aos="flip-right">
                 <div class="image">
@@ -121,7 +145,8 @@
             </div>
         </div>
     </section>
-    <section class="parcerias" id="parcerias">
+
+    <section style="padding: 2rem 9%;" class="parcerias" id="parcerias">
         <div class="box-container">
             <div class="box" data-aos="flip-right">
                 <div class="image">
@@ -166,7 +191,8 @@
             </div>
         </div>
     </section> 
-    <section class="parcerias" id="parcerias">
+    
+    <section style="padding: 2rem 9%;" class="parcerias" id="parcerias">
         <div class="box-container">
             <div class="box" data-aos="flip-right">
                 <div class="image">
@@ -212,8 +238,11 @@
         </div>
     </section>
 
-    <section class="products" id="products">
-        <h1 class="heading">Confira nossas <span>Consultas Presenciais</span></h1>
+    <section style="padding: 2rem 9%;" class="products" id="products">
+        <h1 style="  font-size: 4rem;
+    text-align: center;
+    padding-bottom: 2rem;
+    color: #fff;">Confira nossas <span style="color: var(--main-color);">Consultas Presenciais</span></h1>
         <div class="swiper products-slider" data-aos="zoom-in">
             <div class="swiper-wrapper">
 
@@ -291,10 +320,13 @@
         </div>
     </section>
 
-    <section class="exames w-screen" 
+    <section style="padding: 2rem 9%;" class="exames w-screen" 
     style="background: url(../image/exames.jpg);"
     id="exames">
-        <h1 class="heading"> Tambem Temos <span>consultas online</span></h1>
+        <h1 style="  font-size: 4rem;
+    text-align: center;
+    padding-bottom: 2rem;
+    color: #fff;"> Tambem Temos <span style="color: var(--main-color);">consultas online</span></h1>
         <div class="box-container">
 
             <div class="box" data-aos="fade-right">
@@ -357,38 +389,66 @@
         </div>
     </section>
 
-    <section class="contact" id="contact">
-        <h1 class="heading"> <span>contact</span>us</h1>
-        <div class="row">
-            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3773.5721397711045!2d72.82150100000001!3d18.950323400000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7ce1bd3108791%3A0x413d8c01c82c5754!2sIndia%20Tower%2C%20Hemraj%20Wadi%2C%20Thakurdwar%2C%20Kalbadevi%2C%20Mumbai%2C%20Maharashtra%20400002%2C%20India!5e0!3m2!1sen!2sbr!4v1686232272250!5m2!1sen!2sbr" 
+    <section style="padding: 2rem 9%;" class="contact" id="contact">
+        <h1 style="  font-size: 4rem;
+    text-align: center;
+    padding-bottom: 2rem;
+    color: #fff;"> <span style="color: var(--main-color);">contact</span>us</h1>
+        <div class="row" style="  display: flex;
+        flex-wrap: wrap;">
+            <iframe class="map" style="  flex: 1 1 42rem;
+            width: 100%;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3773.5721397711045!2d72.82150100000001!3d18.950323400000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7ce1bd3108791%3A0x413d8c01c82c5754!2sIndia%20Tower%2C%20Hemraj%20Wadi%2C%20Thakurdwar%2C%20Kalbadevi%2C%20Mumbai%2C%20Maharashtra%20400002%2C%20India!5e0!3m2!1sen!2sbr!4v1686232272250!5m2!1sen!2sbr" 
             allowfullscreen="" 
             loading="lazy">
         </iframe>
-        <form action="">
-            <h3 data-aos="zoom-in">tell us something</h3>
-            <input data-aos="zoom-in" type="text" placeholder="your name" class="box">
-            <input data-aos="zoom-in" type="email" placeholder="your email" class="box">
-            <input data-aos="zoom-in" type="text" placeholder="your number" class="box">
-            <textarea data-aos="zoom-in" placeholder="yout message" class="box" cols="30" rows="10"></textarea>        
+        <form action="" style="  flex: 1 1 42rem;
+        padding: 2rem;
+        text-align: center;
+        background:#222;">
+            <h3 data-aos="zoom-in" style=" font-size: 3rem;
+            padding-bottom: 1rem;
+            color: #fff;">tell us something</h3>
+            <input data-aos="zoom-in" type="text" placeholder="your name" style=" width: 100%;
+            padding: 1rem 1.2rem;
+            background: var(--black);
+            color: #fff;
+            font-size: 1.6rem;
+            text-transform: none;
+            margin: .7rem 0;">
+            <input data-aos="zoom-in" type="email" placeholder="your email" style=" width: 100%;
+            padding: 1rem 1.2rem;
+            background: var(--black);
+            color: #fff;
+            font-size: 1.6rem;
+            text-transform: none;
+            margin: .7rem 0;">
+            <input data-aos="zoom-in" type="text" placeholder="your number" style=" width: 100%;
+            padding: 1rem 1.2rem;
+            background: var(--black);
+            color: #fff;
+            font-size: 1.6rem;
+            text-transform: none;
+            margin: .7rem 0;">
+            <textarea data-aos="zoom-in" placeholder="yout message" cols="30" rows="10" style=" width: 100%;
+            padding: 1rem 1.2rem;
+            background: var(--black);
+            color: #fff;
+            font-size: 1.6rem;
+            text-transform: none;
+            margin: .7rem 0;"></textarea>        
             <input data-aos="zoom-in" type="submit" value="send message" class="btn">
             </form>
         </div>
     </section>
 
-    <section class="footer" id="footer">
-        <div class="box-container">
-
+    <section style="padding: 2rem 9%;" class="footer" id="footer" style="background-color: black;">
+        <div class="box-container" style=" display: grid;
+        grid-template-columns:repeat(auto-fit, minmax(25rem, 1fr));
+        gap: 1.5rem;">
             <div class="box">
-                <h3>our branches</h3>
-                <a href=""><i class="fas fa-map-marker-alt"></i>Sidi</a>
-                <a href=""><i class="fas fa-map-marker-alt"></i>Eco Clinica</a>
-                <a href=""><i class="fas fa-map-marker-alt"></i>Imi Center</a>
-                <a href=""><i class="fas fa-map-marker-alt"></i>Laboratro Masi</a>
-                <a href=""><i class="fas fa-map-marker-alt"></i>Laboratiorio de Audiologia</a>
-                <a href=""><i class="fas fa-map-marker-alt"></i>SerVida</a>
-            </div>
-            <div class="box">
-                <h3>quick links</h3>
+                <h3 style="font-size: 2.2rem;
+                color:#fff;
+                padding: 1rem 0;">quick links</h3>
                 <a href=""><i class="fas fa-arrow-right"></i>home</a>
                 <a href=""><i class="fas fa-arrow-right"></i>products</a>
                 <a href=""><i class="fas fa-arrow-right"></i>about</a>
@@ -410,7 +470,14 @@
                 <a href=""><i class="fab fa-telegram"></i> telegram</a>
             </div>
         </div>
-        <div class="credit"> created by <a href="https://afrotech.netlify.app/">AfroTech</a> |all rights reserved </div>
+        <div class="" style="  padding: 1rem;
+        padding-top: 2.5rem;
+        margin-top: 2.5rem;
+        border-top: .1rem solid #fff4;
+        font-size: 2rem;
+        color: #aaa;
+        text-align: center;"> created by 
+        <a style="color:var(--main-color);" href="https://afrotech.netlify.app/">AfroTech</a> |all rights reserved </div>
     </section>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
