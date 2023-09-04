@@ -317,7 +317,7 @@
         font-size: 55%;
     }
     .header{
-        padding: 2rem;
+        padding: 0;
     }
     .header.active{
         padding: 2rem;
@@ -330,7 +330,8 @@
 @media (max-width:768px){
 
     #menu-btn{
-        display: inline-block;
+        display: absolute;
+        padding-right: 50px;
     }
     .header .navbar{
         top: 99%; left: 0; right: 0;

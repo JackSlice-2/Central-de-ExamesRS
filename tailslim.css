@@ -579,6 +579,11 @@ video {
   text-align: center;
 }
 
+.text-green-700 {
+  --tw-text-opacity: 1;
+  color: rgb(21 128 61 / var(--tw-text-opacity));
+}
+
 :root{
   --main-color: green;
   --black: #141215;
@@ -952,7 +957,7 @@ video {
   }
 
   .header{
-    padding: 2rem;
+    padding: 0;
   }
 
   .header.active{
@@ -966,7 +971,8 @@ video {
 
 @media (max-width:768px){
   #menu-btn{
-    display: inline-block;
+    display: absolute;
+    padding-right: 50px;
   }
 
   .header .navbar{
