@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="overflow-x-hidden" style="font-size: 62.5%; overflow-x: hidden; scroll-behavior: smooth; scroll-padding-top: 7rem;">
+<html lang="en" class="overflow-x-hidden" style="font-size: 62.5%; scroll-behavior: smooth; scroll-padding-top: 7rem;">
   <style>
     /* Tailwind CSS classes */
     html::-webkit-scrollbar {
@@ -34,13 +34,13 @@
         background-attachment: fixed;"
         >
     <header class="header" 
-            style="position: fixed; top: 0; left: 0; right: 0; z-index: 1000; background: rgba(0, 0, 0, .4); padding: 4rem 9%; display: flex; align-items: center; justify-content: space-between;">
+            style="width: fit-content; top: 0; left: 0; right: 0; z-index: 1000; background: rgba(0, 0, 0, .4); padding: 4rem 9%; display: flex; align-items: center; justify-content: space-between;">
         <a href="#" class="logo" 
         style="font-size: 3rem;
         color:#fff;
         font-weight: bolder;"> 
-            <i class="fas fa-stethoscope pr-.5 text-green-700" 
-            style="color: green; animation: floating 2s linear infinite;"></i> 
+            <i class="fas fa-stethoscope pr-.5 text-green-400" 
+            style="color: lightgreen; animation: floating 2s linear infinite;"></i> 
             Rede Exames Facil</a>
         <nav class="navbar absolute bg-black">
             <a href="#home" class="active">home</a>
@@ -51,7 +51,6 @@
         </nav>
         <div class="icons">
             <div id="menu-btn" class="fas fa-bars"></div>
-            <div id="search-btn" class=""></div>
         </div>
     </header>
 
@@ -236,7 +235,7 @@
         </div>
     </section>
 
-    <section style="padding: 2rem 9%;" class="products" id="products">
+    <section style="padding: 2rem 9%;  overflow-x: hidden;" class="products" id="products">
         <h1 style="  font-size: 4rem;
     text-align: center;
     padding-bottom: 2rem;
@@ -248,7 +247,6 @@
                     <div class="icons">
                         <a href="" class="fab fa-telegram"></a>
                         <a href="" class="fab fa-whatsapp"></a>
-                        <a href="" class="fas fa-share"></a>
                     </div>
                     <div class="image">
                         <img src="image/product-1.jpg" alt="">
@@ -262,7 +260,6 @@
                     <div class="icons">
                         <a href="" class="fab fa-telegram"></a>
                         <a href="" class="fab fa-whatsapp"></a>
-                        <a href="" class="fas fa-share"></a>
                     </div>
                     <div class="image">
                         <img src="image/product-2.jpg" alt="">
@@ -276,7 +273,6 @@
                     <div class="icons">
                         <a href="" class="fab fa-telegram"></a>
                         <a href="" class="fab fa-whatsapp"></a>
-                        <a href="" class="fas fa-share"></a>
                     </div>
                     <div class="image">
                         <img src="image/product-3.jpg" alt="">
@@ -290,7 +286,6 @@
                     <div class="icons">
                         <a href="" class="fab fa-telegram"></a>
                         <a href="" class="fab fa-whatsapp"></a>
-                        <a href="" class="fas fa-share"></a>
                     </div>
                     <div class="image">
                         <img src="image/product-4.jpg" alt="">
@@ -304,7 +299,6 @@
                     <div class="icons">
                         <a href="" class="fab fa-telegram"></a>
                         <a href="" class="fab fa-whatsapp"></a>
-                        <a href="" class="fas fa-share"></a>
                     </div>
                     <div class="image">
                         <img src="image/product-5.jpg" alt="">
@@ -318,7 +312,7 @@
         </div>
     </section>
 
-    <section style="padding: 2rem 9%;" class="exames w-screen" 
+    <section style="padding: 2rem 9%; overflow-x: hidden;" class="exames w-screen" 
     style="background: url(../image/exames.jpg);"
     id="exames">
         <h1 style="  font-size: 4rem;
@@ -387,7 +381,7 @@
         </div>
     </section>
 
-    <section style="padding: 2rem 9%;" class="contact" id="contact">
+    <section style="padding: 2rem 9%; overflow-x: hidden;" class="contact" id="contact">
         <h1 style="  font-size: 4rem;
     text-align: center;
     padding-bottom: 2rem;
@@ -439,14 +433,14 @@
         </div>
     </section>
 
-    <section style="padding: 2rem 9%; background-color: black;" class="footer" id="footer">
+    <section style="padding: 2rem 9%; background-color: black; overflow-x: hidden;" class="footer" id="footer">
         <div class="box-container" style=" display: grid;
         grid-template-columns:repeat(auto-fit, minmax(25rem, 1fr));
         gap: 1.5rem;">
             <div class="box">
                 <h3 style="font-size: 2.2rem;
                 color:#fff;
-                padding: 1rem 0;">quick links</h3>
+                padding: 1rem 0;">links rapidos</h3>
                 <a href=""><i class="fas fa-arrow-right"></i>home</a>
                 <a href=""><i class="fas fa-arrow-right"></i>products</a>
                 <a href=""><i class="fas fa-arrow-right"></i>about</a>
@@ -468,14 +462,14 @@
                 <a href=""><i class="fab fa-telegram"></i> telegram</a>
             </div>
         </div>
-        <div class="" style="  padding: 1rem;
+        <div class="" style="padding: 1rem;
         padding-top: 2.5rem;
         margin-top: 2.5rem;
         border-top: .1rem solid #fff4;
-        font-size: 2rem;
+        font-size: 1.5rem;
         color: #aaa;
-        text-align: center;"> created by 
-        <a style="color:var(--main-color);" href="https://afrotech.netlify.app/">AfroTech</a> |all rights reserved </div>
+        text-align: center;"> Criado por
+        <a style="color:var(--main-color);" href="https://afrotech.netlify.app/">AfroTech</a> |todos os direitos reservados </div>
     </section>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="script.js"></script>

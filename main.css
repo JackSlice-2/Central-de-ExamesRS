@@ -17,7 +17,6 @@
     text-decoration: none;
     text-transform: capitalize;
     transition: all .2s linear;
-    transition: width none;
 }
 .btn{
     margin-top: 1rem;
@@ -50,7 +49,7 @@
 }
 .header .navbar a.active,
 .header .navbar a:hover{
-    color:var(--main-color) 
+    color: lightgreen
 }
 .header .icons a,
 .header .icons div{
@@ -61,7 +60,7 @@
 }
 .header .icons a:hover,
 .header .icons div:hover{
-    color:var(--main-color);
+    color: lightgreen;
 }
 .header.active{
     padding: 2rem 9%;
@@ -317,14 +316,16 @@
         font-size: 55%;
     }
     .header{
-        padding: 0;
+        padding: 2rem;
     }
     .header.active{
         padding: 2rem;
     }
-    section{
-        padding: 2rem;
+    .swiper-button-next,
+    .swiper-button-prev{
+        display: none;
     }
+
 }
 
 @media (max-width:768px){
@@ -345,15 +346,25 @@
         margin: 2rem;
         font-size: 2rem;
     }
+    .swiper-button-next,
+    .swiper-button-prev{
+        display: none;
+    }
+
 }
 @media (max-width:450px){
     
     html{
         font-size: 50%;
     }
-    .home .home-slider .swiper-button-next,
-    .home .home-slider .swiper-button-prev{
+    .swiper-button-next,
+    .swiper-button-prev{
         display: none;
     }
-
+    .home .home-slider .box .content h3{
+        font-size: 4rem;
+    }
+    .home .home-slider .box .content p{
+        font-size: 2rem;
+    }
 }

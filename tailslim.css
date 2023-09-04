@@ -579,9 +579,9 @@ video {
   text-align: center;
 }
 
-.text-green-700 {
+.text-green-400 {
   --tw-text-opacity: 1;
-  color: rgb(21 128 61 / var(--tw-text-opacity));
+  color: rgb(74 222 128 / var(--tw-text-opacity));
 }
 
 :root{
@@ -599,7 +599,6 @@ video {
   text-decoration: none;
   text-transform: capitalize;
   transition: all .2s linear;
-  transition: width none;
 }
 
 .btn{
@@ -638,7 +637,7 @@ video {
 
 .header .navbar a.active,
 .header .navbar a:hover{
-  color:var(--main-color)
+  color: lightgreen
 }
 
 .header .icons a,
@@ -651,7 +650,7 @@ video {
 
 .header .icons a:hover,
 .header .icons div:hover{
-  color:var(--main-color);
+  color: lightgreen;
 }
 
 .header.active{
@@ -957,15 +956,16 @@ video {
   }
 
   .header{
-    padding: 0;
+    padding: 2rem;
   }
 
   .header.active{
     padding: 2rem;
   }
 
-  section{
-    padding: 2rem;
+  .swiper-button-next,
+    .swiper-button-prev{
+    display: none;
   }
 }
 
@@ -993,6 +993,11 @@ video {
     margin: 2rem;
     font-size: 2rem;
   }
+
+  .swiper-button-next,
+    .swiper-button-prev{
+    display: none;
+  }
 }
 
 @media (max-width:450px){
@@ -1000,8 +1005,16 @@ video {
     font-size: 50%;
   }
 
-  .home .home-slider .swiper-button-next,
-    .home .home-slider .swiper-button-prev{
+  .swiper-button-next,
+    .swiper-button-prev{
     display: none;
+  }
+
+  .home .home-slider .box .content h3{
+    font-size: 4rem;
+  }
+
+  .home .home-slider .box .content p{
+    font-size: 2rem;
   }
 }
