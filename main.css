@@ -61,7 +61,7 @@
 }
 .header .icons a:hover,
 .header .icons div:hover{
-    color:var(--main-color);
+    color: lightgreen;
 }
 .header.active{
     padding: 2rem 9%;
@@ -322,8 +322,12 @@
     .header.active{
         padding: 2rem;
     }
-    section{
-        padding: 2rem;
+    #menu-btn{
+        display: inline-block;
+    }
+    .home .home-slider .swiper-button-next,
+    .home .home-slider .swiper-button-prev{
+        display: hidden;
     }
 }
 
@@ -344,6 +348,10 @@
         margin: 2rem;
         font-size: 2rem;
     }
+    .home .home-slider .swiper-button-next,
+    .home .home-slider .swiper-button-prev{
+        display: hidden;
+    }
 }
 @media (max-width:450px){
     
@@ -352,7 +360,7 @@
     }
     .home .home-slider .swiper-button-next,
     .home .home-slider .swiper-button-prev{
-        display: none;
+        display: hidden;
     }
 
 }

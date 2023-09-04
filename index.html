@@ -26,33 +26,32 @@
     <link rel="stylesheet" 
         href="main.css">
 </head>
-<body class="overflow-x-hidden"
-    style= "background: 
-        linear-gradient(to bottom, #93cc7d, #329b33),
-        repeating-linear-gradient(45deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) 10px, transparent 10px, transparent 20px);
-        background-size: cover;
-        background-attachment: fixed;"
+<body class="overflow-x-hidden w-screen bg-auto bg-fixed"
+    style= "background:linear-gradient(to bottom, #93cc7d, #329b33),
+        repeating-linear-gradient(45deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) 10px, transparent 10px, transparent 20px);"
         >
-    <header class="header" 
-            style="position: fixed; top: 0; left: 0; right: 0; z-index: 1000; background: rgba(0, 0, 0, .4); padding: 4rem 9%; display: flex; align-items: center; justify-content: space-between;">
+    <header class="header w-screen fixed flex top-0 left-0 right-0 bottom-0 z-10 items-center bg-black" 
+            style="
+            padding: 4rem 9%;
+            display: flex; 
+            justify-content: space-between;
+            ">
         <a href="#" class="logo" 
         style="font-size: 3rem;
         color:#fff;
-        font-weight: bolder;" > 
-            <i class="fas fa-stethoscope" style="padding-right: .5rem;
-            color: lightgreen;
-            animation: floating 2s linear infinite;"></i> 
+        font-weight: bolder;"> 
+            <i class="fas fa-stethoscope pr-.5 text-green-700" 
+            style="color: green; animation: floating 2s linear infinite;"></i> 
             Rede Exames Facil</a>
         <nav class="navbar absolute bg-black">
             <a href="#home" class="active">home</a>
-            <a href="#products">products</a>
-            <a href="#exames">exames</a>
-            <a href="#about">about</a>
+            <a href="#parcerias">Exames</a>
+            <a href="#products">consultas presenciais</a>
+            <a href="#exames">consultas Online</a>
             <a href="#contact">contact</a>
-            <a href="#parcerias">parcerias</a>
         </nav>
         <div class="icons">
-            <div id="menu-btn" style="display: none;" class="fas fa-bars"></div>
+            <div id="menu-btn" class="fas fa-bars mr-5 absolute"></div>
             <div id="search-btn" class=""></div>
         </div>
     </header>
@@ -90,10 +89,8 @@
                 </div>
             </div>
         </div>
-        <div class="swiper-button-next" style="right: 4rem;
-        color: darkgreen;"></div>
-        <div class="swiper-button-prev" style="left: 4rem;
-        color: darkgreen;"></div>
+        <div class="swiper-button-next md:hidden sm:hidden text-green-900" style="right: 4rem;"></div>
+        <div class="swiper-button-prev md:hidden sm:hidden text-green-900" style="left: 4rem;"></div>
     </section>
     
     <section style="padding: 2rem 9%;" class="parcerias" id="parcerias">
@@ -441,7 +438,7 @@
         </div>
     </section>
 
-    <section style="padding: 2rem 9%;" class="footer" id="footer" style="background-color: black;">
+    <section style="padding: 2rem 9%; background-color: black;" class="footer" id="footer">
         <div class="box-container" style=" display: grid;
         grid-template-columns:repeat(auto-fit, minmax(25rem, 1fr));
         gap: 1.5rem;">
