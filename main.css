@@ -144,7 +144,6 @@
     border-radius: 50%;
     font-size: 2rem;
     color: var(--black);
-    background: #fff;
     margin-top: 1rem;
     display: block;
 }
@@ -211,7 +210,6 @@
     border-radius: 50%;
     font-size: 2rem;
     color: var(--black);
-    background: #fff;
     margin-top: 1rem;
     display: block;
 }
