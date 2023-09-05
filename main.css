@@ -17,6 +17,7 @@
     text-decoration: none;
     text-transform: capitalize;
     transition: all .2s linear;
+    transition: width none;
 }
 .btn{
     margin-top: 1rem;
