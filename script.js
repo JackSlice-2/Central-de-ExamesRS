@@ -5,10 +5,11 @@ document.querySelector("#menu-btn").onclick = () =>{
     searchForm.classLogo.remove("active");
 }
 
+document.body.style.overflowX = 'hidden';
+
 // Highlight Menu scroll
 let section = document.querySelectorAll('section');
 let navLinks = document.querySelectorAll('.header .navbar a');
-
 
 window.onscroll = () =>{
     searchForm.classList.remove("active");
