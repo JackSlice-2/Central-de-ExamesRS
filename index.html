@@ -775,12 +775,20 @@
             loading="lazy">
         </iframe>
         </div>
-        <div style="justify-content: space-evenly; align-items: center; flex-direction: row; display: flex; gap: 5rem; padding: 2rem; width: 100%; font-size: 2rem; height: 10rem;">
-            <img src="./image/Logo-Sidi.png" style="height: 9rem; width: auto;"/>
-            <img src="./image/emicenter.png" style="height: 9rem; width: auto;"/>
-            <img src="./image/ecoclinica.png" style="height: 9rem; width: auto;"/>
-            <img src="./image/citoclin.png" style="height: 9rem; width: auto;"/>
+        <div class="image-container" style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 10%; padding: 2rem;">
+            <a href=""><img src="./image/Logo-Sidi.png" style="height: 10rem; flex: 50%;"/></a>
+            <a href=""><img src="./image/emicenter.png" style="height: 10rem; flex: 50%;"/></a>
+            <a href=""><img src="./image/ecoclinica.png" style="height: 10rem; flex: 50%;"/></a>
+            <a href=""><img src="./image/citoclin.png" style="height: 10rem; flex: 50%;"/></a>
         </div>
+        
+        <style>
+            @media (max-width: 768px) {
+                .image-container a img {
+                    flex-basis: 50%;
+                }
+            }
+        </style>
     </section>
 
     <section style="padding: 2rem 9%; background-color: black; overflow-x: hidden;" class="footer" id="footer">
